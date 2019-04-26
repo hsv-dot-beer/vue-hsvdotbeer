@@ -21,6 +21,12 @@
     <!-- Add to home screen for Windows -->
     <meta name="msapplication-TileImage" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/msapplication-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
+    <meta name="description" content="Find draft beer in Huntsville.">
+
+    <meta property="og:url" content="https://hsv.beer" />
+    <meta property="og:title" content="HSV.beer" />
+    <meta property="og:description" content="Find your favorite beer on tap and browse the menu of taprooms all across Huntsville." />
+    <meta property="og:image" content="/static/img/hsvbeer-share.jpg" />
     
     <% for (var chunk of webpack.chunks) {
         for (var file of chunk.files) {

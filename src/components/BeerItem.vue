@@ -2,7 +2,7 @@
 <li class="beer" v-bind:class="{ active: visible }">
   <template v-if="beer">
     <div class="beer-intro">
-      <div class="beer-logo"><img :src="beer.logo_url"></div>
+      <div class="beer-logo"><img :src="beer.logo_url ? beer.logo_url : '/static/img/beernotfound.jpg'"></div>
       <div class="beer-info">
         <a class="beer-link" @click="visible = !visible;">
           <h2 class="beer-name">{{ beer.name }}</h2>
