@@ -208,9 +208,11 @@ export default {
 
         if (this.beers[i].untappd_metadata) {
           if (this.beers[i].untappd_metadata.json_data) {
-            const rating = this.beers[i].untappd_metadata.json_data.rating_score;
-            this.beers[i].rating = Number(rating).toFixed(1);
-            this.beers[i].rating_count = this.beers[i].untappd_metadata.json_data.rating_count;
+            const rating = Number(this.beers[i].untappd_metadata.json_data.rating_score).toFixed(1);
+            if (rating > 0.0) {
+              this.beers[i].rating = rating;
+              this.beers[i].rating_count = this.beers[i].untappd_metadata.json_data.rating_count;
+            }
           }
         }
         if (this.beers[i].abv) {
