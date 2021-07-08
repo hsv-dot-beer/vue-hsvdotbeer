@@ -16,7 +16,7 @@
     "bootstrap-material-design": "^4.1.1",
     "bootstrap-vue": "^2.0.0-rc.19",
     "chosen-js": "^1.8.7",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "offside-js": "^1.4.0",
     "popper.js": "^1.15.0",
     "vue": "^2.5.2",
